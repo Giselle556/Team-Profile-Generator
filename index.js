@@ -1,6 +1,13 @@
+const Manager = require("./files/manager.js");
+const Engineer = require("./files/engineer.js");
+const Intern = require("./files/intern.js");
+const 
+
+
 const inquirer = require("inquirer");
 const fs = require("fs");
 const html = require("./website/temphtml");
+
 
 inquirer.prompt([
   {
