@@ -93,3 +93,4 @@ const renderIntern = (intern) => `
 `;
 
 module.exports = generateHTML;
+
