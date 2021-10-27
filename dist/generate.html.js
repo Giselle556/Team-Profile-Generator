@@ -43,7 +43,7 @@ const renderManager = (manager) =>
 <div class="card employee-card">
 <div class="card-header alert-danger">
     <h2 class="card-title">${manager.name}</h2>
-    <h3 class="card-title">☕️Manager</h3>
+    <h3 class="card-title">Manager</h3>
 </div>
 <div class="card-body">
     <ul class="list-group">
@@ -61,7 +61,7 @@ const renderEngineer = (engineer) => `
 <div class="card employee-card">
     <div class="card-header alert-primary" >
         <h2 class="card-title">${engineer.name}</h2>
-        <h3 class="card-title">🕶Engineer</h3>
+        <h3 class="card-title">Engineer</h3>
     </div>
     <div class="card-body">
         <ul class="list-group">
@@ -79,7 +79,7 @@ const renderIntern = (intern) => `
 <div class="card employee-card">
 <div class="card-header alert-success">
     <h2 class="card-title">${intern.name}</h2>
-    <h3 class="card-title">🎓Intern</h3>
+    <h3 class="card-title">Intern</h3>
 </div>
 <div class="card-body">
     <ul class="list-group">
