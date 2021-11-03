@@ -5,7 +5,10 @@
 
  # Technology
 
- # Video
+ # Video/Images
+ 
+ ![image](https://user-images.githubusercontent.com/89003419/140018731-a8f81c0d-ba91-4ae5-8e50-3fcd11ccfa65.png)
+
 
 https://watch.screencastify.com/v/qqX77NaXUmbUYd5Lo8QZ
 
