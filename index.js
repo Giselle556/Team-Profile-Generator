@@ -7,7 +7,6 @@ const inquirer = require("inquirer");
 const fs = require("fs");
 const employees = [];
 
-// questions for the Manager entering the data
 const questionsForManager = [
   {
     type: "input",
@@ -31,7 +30,7 @@ const questionsForManager = [
     message: "What is the office number for this Manager?",
   },
 ];
-// questions based on entering an Employee of an Engineer
+
 const questionsForEngineer = [
   {
     type: "input",
@@ -54,7 +53,7 @@ const questionsForEngineer = [
     message: "What is the GitHub for the Engineer?",
   },
 ];
-// Questions based on entering an Employee of Intern
+
 const questionsForIntern = [
   {
     type: "input",
@@ -77,7 +76,7 @@ const questionsForIntern = [
     message: "What school does this Intern attend?",
   },
 ];
-// option to add more Employees
+
 const addEmployees = [
   {
     type: "list",
@@ -87,7 +86,7 @@ const addEmployees = [
   },
 ];
 
-// prompt manager's questions.
+
 inquirer.prompt(questionsForManager).then((data) => {
   const employee = new Manager(
     data.name,
@@ -100,7 +99,7 @@ inquirer.prompt(questionsForManager).then((data) => {
   addEmployee(addEmployees);
 });
 
-// function to add engineer's or interns
+
 function addEmployee() {
   inquirer.prompt(addEmployees).then((data) => {
     console.log(data.inputEmployee);
@@ -119,7 +118,7 @@ function addEmployee() {
   });
 }
 
-// function for the case switch to add the Engineer data
+
 function addEngineer() {
   inquirer.prompt(questionsForEngineer).then((data) => {
     const employee = new Engineer(data.name, data.id, data.email, data.github);
@@ -129,7 +128,7 @@ function addEngineer() {
   });
 }
 
-// function for the case switch to add the Intern data
+
 function addIntern() {
   inquirer.prompt(questionsForIntern).then((data) => {
     const employee = new Intern(data.name, data.id, data.email, data.school);
